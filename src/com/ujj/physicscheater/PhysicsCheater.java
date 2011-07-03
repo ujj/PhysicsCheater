@@ -29,15 +29,11 @@ public class PhysicsCheater extends ListActivity {
 		lv.setOnItemClickListener(new OnItemClickListener() {
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
-				// When clicked, show a toast with the TextView text
+		
 				Intent i = new Intent(PhysicsCheater.this,
 						FormulaActivity.class);
 				i.putExtra("topic", ((TextView) view).getText());
 				startActivity(i);
-				// Toast.makeText(getApplicationContext(), ((TextView)
-				// view).getText(),
-				// Toast.LENGTH_SHORT).show();
-
 			}
 		});
 	}

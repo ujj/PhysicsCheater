@@ -48,7 +48,6 @@ public class FormulaActivity extends Activity {
 		} else if (field1Value.equals("Fluids")) {
 			tv.setText(R.string.F);
 		}
-		// Log.d("FormulaTopic", field1Value);
 		closeButton.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
 				finish();
